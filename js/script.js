@@ -5,35 +5,51 @@ createApp({
         return{
            tasks:[
                 {
-                    text:'aaaa' ,
+                    text:'prendere una candela' ,
                     done: false,
                     id:1,
                 },
                 {
-                    text:'bbbb' ,
+                    text:'far bruciare un po\'di incenso' ,
                     done: false,
                     id:2,
                 },
                 {
-                    text:'cccc' ,
-                    done: true,
+                    text:'fare un cerchio di sale' ,
+                    done: false,
                     id:3,
                 },
                 {
-                    text:'dddd' ,
+                    text:'prendere una scopa saggina' ,
                     done: false,
                     id:4,
 
                 },
                 {
-                    text:'eeee' ,
-                    done: true,
+                    text:'Prendere foglie di alloro' ,
+                    done: false,
                     id:5,
+                },
+                {
+                    text:'Prendere foglio di carta e penna' ,
+                    done: true,
+                    id:6,
+                },
+                {
+                    text:'preparare calderone' ,
+                    done: true,
+                    id:7,
+                },
+                {
+                    text:'Prendere accendino o fiammiferi' ,
+                    done: false,
+                    id:7,
                 },
            ], 
            lastId:5,
            todotext:'',
            filtervalue:'tutto',
+           showSpooky:false,
         }
     },
     methods:{
@@ -66,8 +82,12 @@ createApp({
             }
         })
        },
+
     },
     mounted(){
+        setTimeout(() => {
+            this.showSpooky = true;
+          }, 3000); 
         
     }
 }).mount('#app');
