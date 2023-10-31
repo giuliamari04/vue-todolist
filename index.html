@@ -53,6 +53,9 @@
     </Transition>
         </header>
         <main>
+            <audio autoplay loop volume="0.3">
+                <source src="sound/let-the-mystery-unfold-122118.mp3" type="audio/mpeg">
+              </audio>
 
             <ul class="list-group mb-5" v-if="tasks.length>0">
                 <li class="list-group-item list-group-item-action d-flex justify-content-between " v-for="(todo,index) in filteredTasks()" :key="todo.id"  >
@@ -64,8 +67,6 @@
               <div v-else>
                 <h3>Non hai tasks</h3>
               </div>
-
-              
         </main>
      </div>
     </div>

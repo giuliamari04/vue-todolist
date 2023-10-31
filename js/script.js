@@ -87,7 +87,7 @@ createApp({
     mounted(){
         setTimeout(() => {
             this.showSpooky = true;
-          }, 3000); 
+          }, 3000);
         
     }
 }).mount('#app');
